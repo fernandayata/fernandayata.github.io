@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+
+    <title>Apresentação</title>
+
+    <style>
+        body {
+            font-family: "Texturina", cursive;
+            background-color: #ffcccc;
+        }
+
+        #context {
+            display: flex;
+        }
+
+        #social {
+            display: flex;
+            width: 10px;
+            /* largura da imagem */
+            height: 30px;
+            /*  altura da imagem  */
+            margin-top: 10px;
+            /* margem do topo */
+
+
+        }
+
+        #info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 30px;
+            padding-top: 30px;
+            color: rgb(191, 64, 128)
+        }
+
+        #sobre {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #ver-mais {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        #texto {
+            padding-top: 10%;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 80px;
+
+
+        }
+
+        li {
+            list-style-type: none;
+            text-align: left;
+            justify-content: start;
+            cursor: default;
+
+
+
+        }
+
+        li::before {
+            content: '✓';
+        }
+
+        li:hover {
+            color: #a3297a;
+        }
+
+
+        .topicos {
+            text-align: center;
+            font-weight: bolder;
+            border-radius: 10%;
+            border: 2px solid;
+            box-shadow: 50px violet;
+            width: 150px;
+            color: rgb(191, 64, 128)
+        }
+
+
+        #info>.zoom>img {
+            width: 300px;
+            height: 310px;
+            border-radius: 50%;
+            border: 4px solid;
+            box-shadow: violet;
+            border-color: rgb(191, 64, 128);
+
+        }
+
+        .zoom:hover img {
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="context">
+
+
+        <div id="sobre">
+            <div id="texto">
+                <p> "Oi, eu sou a Fernanda! Tenho 24 anos, sou natural do interior do Paraná, casada, e arquivista
+                    formada
+                    pela
+                    UFSC. Atuo como
+                    recepcionista/secretária em um escritório de advocacia admirável. Também estudo programação, e
+                    pratico
+                    natação
+                    2x por semana. Adoro brincar com meu cachorro e ir nas muitas praias de Florianópolis, onde tenho o
+                    prazer de morar há 7 anos".</p>
+
+            </div>
+
+            <div id="ver-mais">
+
+                <div>
+                    <div class="topicos">Habilidades </div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Desenho</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <div class="topicos">Hobies</div>
+                    <ul>
+                        <li>Ir à praia</li>
+                        <li>Brincar com meu cachorro</li>
+                        <li>Cozinhar</li>
+                        <li>Asistir séries</li>
+                        <li>Desenhar</li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="topicos">Biografia</div>
+                    <ul>
+                        <li>Paranaense</li>
+                        <li>Moradora de Florianópolis</li>
+                        <li>Arquivista</li>
+                        <li>24 anos</li>
+                        <li>Casada</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="info">
+            <div class="zoom"><img src="./assets/Eu.png" alt="mulher sorrindo"></div>
+
+
+            <h1>Fernanda Moraes</h1>
+
+            <div id="social"> <a target="_blank" href="https://github.com/fernandayata"><img
+                        src="./assets/GitHub.png"></a> </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
